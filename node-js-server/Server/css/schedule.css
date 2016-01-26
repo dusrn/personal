@@ -1,0 +1,139 @@
+/*
+    Document   : chat/css/schedule.css
+    Created on : 2015-09-11 02:48 PM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.content-wrap section.schedule {
+  display: none;
+}
+
+.content-wrap section.schedule > * {
+  padding: 8px;
+}
+
+.ui-datepicker {
+  width: calc(100% - 16px);
+  height: 240px;
+  left: 0;
+}
+
+.ui-datepicker-year {
+  margin-right: -5px;
+}
+
+section.schedule .schedule-item,
+section.schedule .content-wrap {
+  background-color: #fff;
+}
+
+section.schedule:nth-child(2) {
+  margin-top: 65px;
+}
+
+section.schedule .schedule-datepicker-wrap {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  background-color: #fff;
+  z-index: 3;
+  top: 56px;
+}
+
+section.schedule .schedule-datepicker-wrap span {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.schedule .schedule-datepicker-wrap .selector {
+  width: 100%;
+  text-align: center;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.75);
+}
+
+.ui-datepicker-week-end:first-child,
+.ui-datepicker-week-end:first-child a {
+  color:red
+}
+
+.ui-datepicker-week-end:last-child,
+.ui-datepicker-week-end:last-child a {
+  color:blue
+}
+
+section.schedule .schedule-item-wrap {
+  background-color: white;
+}
+
+section.schedule .schedule-item .schedule-content {
+  width: 100%;
+  height: 300px;
+}
+
+section.schedule .schedule-item .schedule-content img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+section.schedule .schedule-item:after,
+section.schedule .schedule-item::after {
+  content: "";
+  border-bottom: 1px solid #d1d1d1;
+  display: block;
+}
+
+section.schedule .schedule-title {
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+section.schedule .schedule-title .schedule-title-icon {
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(/images/icons/schedule-content-icon.svg);
+  margin: 3px 6px 3px 3px;
+  display: block;
+}
+
+section.schedule .schedule-title .schedule-title-div {
+  float: left;
+  display: block;
+  height: 30px;
+  width: 50%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.schedule .schedule-title .schedule-title-div span {
+  font-size: 20px;
+}
+
+section.schedule .schedule-title .schedule-date-div {
+  float: right;
+  display: block;
+  height: 15px;
+  width: calc(50% - 33px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.schedule .schedule-date {
+  float: right;
+  display: block;
+  font-size: 12px;
+}

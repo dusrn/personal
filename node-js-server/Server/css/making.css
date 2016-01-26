@@ -1,0 +1,81 @@
+/*
+    Document   : chat/css/making.css
+    Created on : 2015-09-12 01:21 PM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.content-wrap section.making {
+  color: rgb(255, 145, 145);
+  display: none;
+  background :url(/images/metallica2.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+.content-wrap section.making > * {
+  padding: 8px;
+}
+
+section.making .profile-wrap {
+  width: 100%;
+  position: fixed;
+}
+
+section.making .profile-photo {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+section.making .profile-photo img {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #eee;
+  background-size: auto 100%;
+}
+
+section.making .profile-info {
+  display: inline-block;
+  width: calc(100% - 100px);
+  height: 150px;
+  padding: 15px 8px 8px 8px;
+  overflow: hidden;
+}
+
+.profile-info .info-que {
+  display: inline-block;
+  float: left;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.profile-info .info-ans {
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section.making .profile-info p {
+  width: 100%;
+  margin: 0 0 5px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+}
+
+section.making .comment-wrap {
+  border-top: 1px solid #eee;
+  width: 100%;
+  position: fixed;
+  top: 222px;
+}
+
+section.making .comment-wrap span {
+  position: relative;
+}

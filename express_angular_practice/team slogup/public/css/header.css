@@ -1,0 +1,118 @@
+.tsg-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 130px;
+    background: #fff;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-transition: height .3s;
+    -moz-transition: height .3s;
+    transition: height .3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tsg-header:before, .tsg-header:after {
+    content: " ";
+    display: table;
+}
+
+.tsg-header:after {
+    clear: both;
+}
+
+.tsg-header h1, .tsg-header nav a {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.tsg-header h1 {
+    display: inline-block;
+    line-height: 130px;
+    margin: 0;
+    font-size: 30px;
+}
+
+.tsg-header h1 .svg {
+    width: 130px;
+    transition: all .2s linear;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.tsg-header .header__nav {
+    float: right;
+}
+
+.tsg-header .header__nav li.active, .tsg-header .header__nav li:hover {
+    border-bottom: 3px solid #2787ff;
+}
+
+.tsg-header .header__nav li.active, .tsg-header .header__nav li:hover {
+    border-bottom: 3px solid #2787ff;
+}
+
+.tsg-header .header__nav li.active a, .tsg-header .header__nav li:hover a {
+    color: #2787ff;
+}
+
+.tsg-header h1 .svg:hover {
+    fill: #2787ff;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.tsg-header .header__nav li {
+    display: inline-block;
+    height: 85px;
+    margin: 0 5px;
+}
+
+.tsg-header nav li {
+    -webkit-transition: height .3s,border-bottom .1s;
+    -moz-transition: height .3s,border-bottom .1s;
+    transition: height .3s,border-bottom .1s;
+}
+
+.tsg-header .header__nav a {
+    line-height: 130px;
+    color: #030303;
+    font-weight: 600;
+    font-size: 1.25em;
+    padding: 5px;
+}
+
+.tsg-header.tsg-header--shrink {
+    height: 80px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.tsg-header.tsg-header--shrink h1, .tsg-header.tsg-header--shrink nav a {
+    line-height: 70px;
+}
+
+.tsg-header.tsg-header--shrink h1 .svg {
+    width: 110px;
+}
+
+.tsg-header.tsg-header--shrink li {
+    height: 55px;
+}
+
+.tsg-header.tsg-header--shrink .header__nav a {
+    font-size: 1em;
+}

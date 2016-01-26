@@ -1,0 +1,341 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Main page</title>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/icon.css">
+    <link rel="stylesheet" type="text/css" href="/css/action.css">
+    <link rel="stylesheet" type="text/css" href="/css/side-nav.css">
+    <link rel="stylesheet" type="text/css" href="/css/sign-up.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/notice.css">
+    <link rel="stylesheet" type="text/css" href="/css/schedule.css">
+    <link rel="stylesheet" type="text/css" href="/css/photo.css">
+    <link rel="stylesheet" type="text/css" href="/css/making.css">
+    <link rel="stylesheet" type="text/css" href="/css/client.css">
+    <link rel="stylesheet" type="text/css" href="/css/chatting.css">
+  </head>
+
+  <body>
+    <input type="checkbox" id="side-nav-toggler" class="side-nav-toggler" />
+    <div class="overlay"><label for="side-nav-toggler"></label></div>
+    
+    <div class="side-nav" id="side-nav-id">
+      <nav>
+        <div class="user-info-wrap">
+          <div class="user-icon-wrap">
+            <div class="user-icon what-icon action"></div>
+          </div>
+          <form class="user-login-wrap">
+            <div class="user-login-text-wrap">
+              <input class="user-login-id" name="id" autocomplete="off" placeholder="Id" />
+              <input type="password" class="user-login-pw" name="pw" autocomplete="off" placeholder="Password" />
+            </div>
+            <div class="user-login-button-wrap">
+              <div class="log-in-button action">
+                <p class="button-text"><img/>Sign-up</p>
+              </div>
+            </div>
+          </form>
+          <form class="user-login-success-wrap">
+            <div class="user-login-text-wrap">
+              <div class="user-info">
+                <p class="user-level"></p>
+              </div>
+              <div class="user-info">
+                <p class="user-name"></p>
+              </div>
+            </div>
+            <div class="user-logout-button-wrap">
+              <div class="log-out-button">
+                <p class="button-text"><img/>Log-out</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <ul class="side-nav-list">
+          <li class="side-nav-list-item"><label for="side-nav-toggler"><a class="side-nav-item-name"><div class="side-nav-item-icon home-icon"></div><p>Home</p></a></label></li>
+          <li class="side-nav-list-item"><label for="side-nav-toggler"><a class="side-nav-item-name"><div class="side-nav-item-icon schedule-icon"></div><p>Schedule</p></a></label></li>
+          <li class="side-nav-list-item"><label for="side-nav-toggler"><a class="side-nav-item-name"><div class="side-nav-item-icon make-icon"></div><p>Making</p></a></label></li>
+          <li class="side-nav-list-item no-login"><label for="side-nav-toggler"><a class="side-nav-item-name"><div class="side-nav-item-icon notice-icon"></div><p>Notice</p></a></label></li>
+          <li class="side-nav-list-item no-login"><label for="side-nav-toggler"><a class="side-nav-item-name"><div class="side-nav-item-icon photo-icon"></div><p>Photo</p></a></label></li>
+          <li class="side-nav-list-item no-login"><label for="side-nav-toggler"><a class="side-nav-item-name"><div class="side-nav-item-icon chat-icon"></div><p>Chatting</p></a></label></li>
+        </ul>
+        <div class="sign-up">
+          <div class="sign-up-wrap">
+            <div class="sign-up-question">
+              <p>ID</p>
+              <P>PW</P>
+              <p>Name</p>
+              <p>Age</p>
+              <p>Gender</p>
+              <p>Phone</p>
+              <p>Xth</p>
+              <p>Role</p>
+            </div>
+            <div class="sign-up-answer">
+              <input class="sign-up-id" autocomplete="off" placeholder="Id" />
+              <input type="password" class="sign-up-pw" autocomplete="off" placeholder="Password" />
+              <input class="sign-up-name" autocomplete="off" placeholder="홍길동" />
+              <input class="sign-up-age" autocomplete="off" placeholder="26" />
+              <form class="sign-up-gender">
+                <select class="sign-up-gender-select" size="1">
+                  <option>남</option>
+                  <option>여</option>
+                </select>
+              </form>
+              <input class="sign-up-phone" autocomplete="off" placeholder="010-xxxx-xxxx" />
+              <input class="sign-up-xth" autocomplete="off" placeholder="19" />
+              <form class="sign-up-role">
+                <select class="sign-up-role-select" size="1">
+                  <option>Vocal</option>
+                  <option>Guitar</option>
+                  <option>Bass</option>
+                  <option>Keyboard</option>
+                  <option>Drum</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="sign-up-button-wrap">
+            <div class="sign-up-button action">
+              <p class="button-text"><img>OK</p>
+            </div>
+          </div>
+          <div class="sign-up-cancel-button-wrap">
+            <div class="sign-up-cancel-button action">
+              <p class="button-text"><img>Cancel</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="main-view">
+      <header class="header">
+        <div class="side-nav-toggle"><label for="side-nav-toggler"></label></div>
+        <div class="title action">
+          <span class="main-title">CHAOS</span>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="cards">
+          <ul id="thumb_card_list" class="thumb-card-list">
+            <li class="thumb-card big-thumb ratio2_1">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main1.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">what?</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+             <div class="content-block">
+                <img style="background-image: url(/images/main/ganji.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">윤석!</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main4.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">무건!</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main3.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">fuck!</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main2.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">짱꼴라!</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main5.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">MT</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main6.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">??</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main7.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">규식!</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main10.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">행님</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main8.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">ㅋ</p>
+                </div>
+              </div>
+            </li>
+            <li class="thumb-card">
+              <div class="content-block">
+                <img style="background-image: url(/images/main/main9.jpg);" />
+                <div class="primary-title">
+                  <p class="sub-text">ㅋㅋㅋㅋ</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="schedule">
+          <div class="schedule-datepicker-wrap">
+            <span>Date</span>
+            <input type="text" class="selector" id="datepicker" />
+          </div>
+          <div class="schedule-item-wrap">
+            <article class="schedule-item">
+              <a class="schedule-title">
+                <div class="schedule-title-icon"></div>
+                <div class="schedule-title-div"><span>그 언젠가의 공연1</span></div>
+                <div class="schedule-date-div"></div>
+                <div class="schedule-date-div"><span class="schedule-date">2011.12.02</span></div>
+              </a>
+              <div class="schedule-content">
+                <img style="background-image: url(/images/schedule/schedule1.jpg);" />
+              </div>
+            </article>
+            <article class="schedule-item">
+              <a class="schedule-title">
+                <div class="schedule-title-icon"></div>
+                <div class="schedule-title-div"><span>그 언젠가의 공연2</span></div>
+                <div class="schedule-date-div"></div>
+                <div class="schedule-date-div"><span class="schedule-date">2012.08.15</span></div>
+              </a>
+              <div class="schedule-content">
+                <img style="background-image: url(/images/schedule/schedule2.jpg);" />
+              </div>
+            </article>
+            <article class="schedule-item">
+              <a class="schedule-title">
+                <div class="schedule-title-icon"></div>
+                <div class="schedule-title-div"><span>그 언젠가의 공연3</span></div>
+                <div class="schedule-date-div"></div>
+                <div class="schedule-date-div"><span class="schedule-date">2013.05.31</span></div>
+              </a>
+              <div class="schedule-content">
+                <img style="background-image: url(/images/schedule/schedule3.jpg);" />
+              </div>
+            </article>
+            <article class="schedule-item">
+              <a class="schedule-title">
+                <div class="schedule-title-icon"></div>
+                <div class="schedule-title-div"><span>그 언젠가의 공연4</span></div>
+                <div class="schedule-date-div"></div>
+                <div class="schedule-date-div"><span class="schedule-date">2013.11.24</span></div>
+              </a>
+              <div class="schedule-content">
+                <img style="background-image: url(/images/schedule/schedule4.jpg);" />
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="making">
+          <div class="profile-wrap">
+            <div class="profile-photo action">
+              <img src="/images/myphoto.jpg"/>
+            </div>
+            <div class="profile-info">
+              <div class="info-que">
+                <p class="action">Name</p>
+                <p class="action">Gender</p>
+                <p class="action">Age</p>
+                <p class="action">Status</p>
+                <p class="action">Phone</p>
+              </div>
+              <div class="info-ans">
+                <p class="action">Kim Jongyeop</p>
+                <p class="action">Male</p>
+                <p class="action">26</p>
+                <p class="action">Single</p>
+                <p class="action">010-9218-5131</p>
+              </div>
+            </div>
+          </div>
+          <div class="comment-wrap">
+            <span>
+              안녕하세요. CHAOS 19기 Vocalist 김종엽입니다. 가뜩이나 군대도 늦게 왔는데... 동방도 없어지고... 뭐 그냥 적적해서 만들어봤습니다.
+            </span><br>
+            <span>
+              뭐 이거 저거 더 있었으면 좋겠다 싶으신 분은 저한테 다이렉트로 연락 주시면 언젠가 추가하겠습니다.
+            </span>
+          </div>
+        </section>
+        <section class="notice">
+          
+        </section>
+        <section class="photo">
+          
+        </section>
+        <section class="chatting">
+          <article class="messages">
+            <p style="color: blue;">Chaos 채팅방에 오신걸 환영합니다.</p>
+          </article>
+          <div class="scroll-down"><div></div></div>
+          <form class="insert-wrap" action="">
+            <textarea class="insert-area" autocomplete="off" placeholder="message...">
+            </textarea>
+            <div class="insert"><div></div></div>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script src="/js/action.js"></script>
+    <script src="/js/side-nav.js"></script>
+    <script src="/js/schedule.js"></script>
+    <script src="/js/notice.js"></script>
+    <script src="/js/chatting.js"></script>
+    <!--
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero nisi eos sed qui natus, ut eius reprehenderit error nesciunt veniam aliquam nulla itaque labore obcaecati molestiae eveniet, perferendis provident amet perspiciatis expedita accusantium! Eveniet, quos voluptas et, labore natus, saepe unde est nulla sit eaque tempore debitis accusantium. Recusandae.</p>
+          <p>Dolorem aliquam a libero reiciendis obcaecati doloribus ipsa eos laudantium, dicta in! Odit iure ut ratione, dolorum cupiditate perferendis voluptatum sapiente, dignissimos sunt necessitatibus, reprehenderit consequatur dolorem. Aliquam veniam quaerat, pariatur deserunt reiciendis vero vitae, repellat omnis sequi dolor nesciunt. Nihil similique alias impedit, obcaecati eligendi delectus voluptatum! Ipsum, vel.</p>
+          <p>Sint, perspiciatis nemo aut, rerum excepturi deleniti modi quos nihil corporis eum, maiores soluta labore, consectetur eligendi nesciunt. Placeat, incidunt! Illum placeat eligendi, veritatis consectetur eum! Dolor obcaecati minima ab placeat voluptatem neque modi doloribus, magnam qui voluptate eaque in. Nulla expedita hic porro architecto facere officiis vitae numquam, dolor!</p>
+          <p>Perferendis quis ea incidunt ducimus nisi voluptate natus. Repellat asperiores quod rerum rem quos blanditiis enim modi, veniam voluptas a facilis! Velit cum omnis, voluptatum eum inventore! Corrupti, suscipit, neque distinctio expedita est laboriosam cum aliquid minus tempora quaerat officia possimus unde vel deleniti eaque fugit accusamus iusto dolorum natus.</p>
+          -->
+  </body>
+</html>

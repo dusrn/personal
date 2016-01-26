@@ -1,0 +1,85 @@
+<section>
+  <div id="tsg-introduce" class="tsg-main__intro-container">
+    <div class="wrapper">
+      <section class="tsg-intro width--full">
+        <div class="intro__box intro__box--left">
+          <img src="./image/bg_index_rending_logo.png" class="intro__img" alt="team slogup">
+        </div>
+        <div class="intro__box intro__box--right">
+          <h2>팀슬로그업은 지금입니다.</h2>
+          <p class="">
+            될 때까지 하는 근성,<br>
+            불꽃같은 열정. <br>
+            스타트업계의 북산!
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="tsg-why" class="tsg-main__why-container">
+    <div class="wrapper">
+      <section class="tsg-why">
+        <header class="why__header">
+          <h2 class="sr-only">이유</h2>
+          <h4>약은 약사에게, 스타트업 홈페이지는 스타트업에게.</h4>
+          <h3>스타트업 서비스는 스타트업만이 이해할 수 있습니다.</h3>
+        </header>
+        <div class="why__contents">
+          <div class="why__cts">
+            <div>상생</div>
+            <p>같이 갑니다. 어떻게든 팔고 보자는 식의 기성 웹에이전시들과 본질적으로 다르다는 게 저희의 자부심입니다.</p>
+          </div>
+          <div class="why__cts">
+            <div>기술력</div>
+            <p>무리해서 많은 외주를 받지 않습니다. 욕심내지 않고 매달 필요한 만큼만 작게 받아 제대로 만드는데 집중합니다.</p>
+          </div>
+          <div class="why__cts">
+            <div>정직</div>
+            <p>가격이 더 저렴한 곳이 있습니다. 저희보다 잘 만드는 곳도 있습니다. 그러나 저희 가격에 저희만큼 퀄리티를 내는 곳은 없다고 자신합니다.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="tsg-examples" class="tsg-main__section-container">
+    <div class="wrapper">
+      <section class="tsg-section">
+        <header class="section__header">
+          <h2>주요 포트폴리오</h2>
+          <p>
+            '외주는 감당할 수 있는 만큼만 받아 제대로 만든다.'
+            <br>저희의 원칙입니다.
+            <br>시간에 쫓겨 유지보수도 안되게 날코딩하는 일은 없습니다.
+          </p>
+        </header>
+        <div class="section__content" >
+          <ul class="ptfolios-container">
+            <li ng-repeat="ptfolioitem in portfolioitem" ng-click="ptfolio_click($event)" ng-show="ptfolioitem.index < 3">
+              <article class="ptfolio">
+                <div class="ptfolio__img--wrap">
+                  <div class="ptfolio__img" style="background-image: {{ptfolioitem.url}}"></div>
+                </div>
+                <div class="ptfolio__mask">
+                  <div class="mask-text">
+                    <h4>{{ptfolioitem.info1}}</h4>
+                    <p>{{ptfolioitem.info2}}</p>
+                  </div>
+                </div>
+                <div class="ptfolio__body">
+                  <div>{{ptfolioitem.info1}}</div>
+                  <div>{{ptfolioitem.info2}}</div>
+                  <div class="loader"></div>
+                  <div>{{ptfolioitem.info3}}</div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <footer class="section__footer">
+          <a href="#/portfolio" class="button button--wapasha button--round-l button--text-thick button--inverted">포트폴리오 더보기</a>
+        </footer>
+      </section>
+    </div>
+  </div>
+  <modal-page></modal-page>
+</section>

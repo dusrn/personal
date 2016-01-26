@@ -1,0 +1,81 @@
+<section class="tsg-portfolio" ng-controller="PortfolioCtrl">
+  <div id="tsg-main-logo" class="tsg-main__logo-container">
+    <div class="wrapper">
+      <section class="tsg-intro">
+        <div class="intro__box">
+          THE BEST IS YET TO COME
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="tsg-company-web" class="tsg-main__section-container tsg-portfolio__detailed">
+    <div class="wrapper">
+      <section class="tsg-section">
+        <header class="section__header">
+          <h2>Web</h2>
+        </header>
+        <div class="section__content">
+          <ul class="ptfolios-container">
+            <li ng-repeat="ptfolioitem in portfolioitem" ng-show="ptfolioitem.index < 7" ng-click="ptfolio_click($event)">
+              <article class="ptfolio">
+                <div class="ptfolio__img--wrap">
+                  <div class="ptfolio__img" style="background-image: {{ptfolioitem.url}}"></div>
+                </div>
+                <div class="ptfolio__mask">
+                  <div class="mask-text">
+                    <h4>{{ptfolioitem.info1}}</h4>
+                    <p>{{ptfolioitem.info2}}</p>
+                  </div>
+                </div>
+                <div class="ptfolio__body">
+                  <div>{{ptfolioitem.info1}}</div>
+                  <div>{{ptfolioitem.info2}}</div>
+                  <div class="loader"></div>
+                  <div>{{ptfolioitem.info3}}</div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="tsg-company-app" class="tsg-main__section-container tsg-portfolio__detailed">
+    <div class="wrapper">
+      <section class="tsg-section">
+        <header class="section__header">
+          <h2>App</h2>
+        </header>
+        <div class="section__content">
+          <ul class="ptfolios-container">
+            <li ng-repeat="ptfolioitem in portfolioitem" ng-show="ptfolioitem.index > 6" ng-click="ptfolio_click($event)">
+              <article class="ptfolio">
+                <div class="ptfolio__img--wrap">
+                  <div class="ptfolio__img" style="background-image: {{ptfolioitem.url}}"></div>
+                </div>
+                <div class="ptfolio__mask">
+                  <div class="mask-text">
+                    <h4>{{ptfolioitem.info1}}</h4>
+                    <p>{{ptfolioitem.info2}}</p>
+                  </div>
+                </div>
+                <div class="ptfolio__body">
+                  <div>{{ptfolioitem.info1}}</div>
+                  <div>{{ptfolioitem.info2}}</div>
+                  <div class="loader"></div>
+                  <div>{{ptfolioitem.info3}}</div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="section__footer">
+    <div class="section__btn-group">
+    <a ui-sref="request" class="button button--wapasha button--round-l button--text-thick button--inverted" href="/#/request">프로젝트 문의</a>
+    </div>
+  </footer>
+  <modal-page></modal-page>
+</section>

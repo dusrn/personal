@@ -1,0 +1,96 @@
+/*
+    Document   : Server/css/sign-up.css
+    Created on : 2015-11-09 01:43 PM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.side-nav div.sign-up {
+  display: none;
+  width: 100%;
+  height: calc(100% - 200px);
+}
+
+.side-nav div.sign-up > * {
+  padding: 8px;
+}
+
+.sign-up .sign-up-wrap {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.sign-up .sign-up-wrap .sign-up-answer,
+.sign-up .sign-up-wrap .sign-up-question {
+  width: 35%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+}
+
+.sign-up .sign-up-wrap .sign-up-answer {
+  width: 65%;
+}
+
+.sign-up .sign-up-wrap p {
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.sign-up .sign-up-wrap .sign-up-answer form {
+  width: 100%;
+  margin: 2px 0;
+  border: 2px;
+}
+
+.sign-up .sign-up-wrap .sign-up-answer select {
+  color: #111;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+}
+
+.sign-up .sign-up-wrap .sign-up-answer input {
+  width: 100%;
+  color: #111;
+  border-radius: 10px;
+  margin: 2px 0;
+  padding-left: 3px;
+  outline: none;
+}
+
+.sign-up .sign-up-cancel-button-wrap,
+.sign-up .sign-up-button-wrap {
+  width: 50%;
+  height: 50px;
+  display: inline-block;
+  float: left;
+}
+
+.sign-up .sign-up-cancel-button,
+.sign-up .sign-up-button {
+  background: #6F1C1C;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border: 2px outset buttonface;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.sign-up .button-text {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.sign-up img {
+  height: 100%;
+}

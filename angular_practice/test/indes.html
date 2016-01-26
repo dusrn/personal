@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular test</title>
+  <link rel="stylesheet" type="text/ccss" href="./css/main.css">
+</head>
+<body ng-app="myapp">
+  <div ng-controller="ctrl">
+    My name:
+    <input type="text" ng-model="name" />
+    <button ng-click="click()">Click!</button>
+    <h1>My name is {{showname}}</h1>
+  </div>
+  <script src="./js/angular.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/*
+    Document   : chat/css/notice.css
+    Created on : 2015-09-11 02:36 PM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.content-wrap section.notice {
+  display: none;
+  background :url(/images/metallica.jpg) center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-wrap section.notice > * {
+  padding: 8px;
+}
+
+section.notice .notice-item {
+  color: #eee;
+}
+
+section.notice .notice-item:after,
+section.notice .notice-item::after {
+  content: "";
+  border-bottom: 1px solid #d1d1d1;
+  display: block;
+}
+
+section.notice .notice-title {
+  display: block;
+  overflow: hidden;
+  height: 30px;
+}
+
+section.notice .notice-title .notice-title-icon {
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(/images/icons/notice-content-icon.svg);
+  margin: 3px 6px 3px 3px;
+  display: none;
+}
+
+section.notice .notice-title .notice-title-div {
+  float: left;
+  display: block;
+  height: 30px;
+  width: 50%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.notice .notice-title .notice-title-div span{
+  font-size: 20px;
+}
+
+section.notice .notice-title .notice-date-div {
+  float: right;
+  display: block;
+  height: 15px;
+  width: calc(50% - 33px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.notice .notice-date {
+  float: right;
+  display: block;
+  font-size: 12px;
+}
+
+section.notice .notice-hide {
+  display: none;
+  color: #000;
+}
+
+section.notice .notice-content-icon {
+  height: 13px;
+  width: 13px;
+  display: block;
+  float: left;
+  background: url(/images/icons/diamond.svg);
+  margin: 3px;
+}
+
+section.notice .blank-page {
+  position: relative;
+  display: block;
+}

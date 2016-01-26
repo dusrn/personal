@@ -1,0 +1,16 @@
+/*
+    Document   : chat/css/photo.css
+    Created on : 2015-09-11 02:49 PM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.content-wrap section.photo {
+  display: none;
+}
+
+.content-wrap section.photo > * {
+  padding: 8px;
+}

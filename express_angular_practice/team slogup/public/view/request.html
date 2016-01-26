@@ -1,0 +1,145 @@
+<section class="tsg-request" ng-controller="RequestCtrl">
+  <div id="tsg-main-logo" class="tsg-main__logo-container">
+    <div class="wrapper">
+      <section class="tsg-intro">
+        <div class="intro__box">
+          ANY Q WOULD BE WELCOMED
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="tsg-main__section-container">
+    <div class="wrapper">
+      <section class="tsg-section">
+        <header class="section__header">
+          <h2>제작의뢰</h2>
+          <p> 의뢰나 문의는 여기에 남겨주세요.<br>
+          </p>
+        </header>
+        <div class="section__content">
+          <form name="form" class="form-horizontal" ng-submit="submit()" novalidate >
+            <div class="form-group" ng-repeat="insert in inserts">
+              <label class="col-sm-4 control-label">{{insert.title}}</label>
+              <div class="col-sm-offset-right-4 col-sm-4">
+                <div key="name" required error="" focus="true">
+                  <input type="text" name="name" class="form-control">
+                  <div class="errors">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">알게된 경로 *</label>
+              <div class="col-sm-offset-right-4 col-sm-4">
+                <div type="fill" key="referPath" >
+                  <ul class="form-radio">
+                    <li ng-click="checkit($event)" ng-repeat="select in selects">
+                      <input id="{{select.id}}" ng-model="$parent.value" type="radio" value={{select.value}}>
+                      <label for="{{select.id}}">{{select.value}}</label>
+                      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"></svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">파일첨부</label>
+              <div class="col-sm-offset-right col-sm-4">
+              <div class="dropzone" file-dropzone=".hwp, application/zip, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*" data-max-file-size="10">
+                  <div class="dropzone-inner">
+                    <div class="dropzone-input">
+                      <input type="file" multiple="" accept=".hwp, application/zip, application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint, text/plain, application/pdf, image/*">
+                      <button>파일 추가하기</button>
+                    </div>
+                    <div class="slide">
+                      <div class="entering">파일을 여기다 넣어주세요!!</div>
+                      <div class="ining">이제 손을 놓으세요!!</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropzone-comment">파일 용량은 최대 10MB까지 가능합니다.(사진,zip,pdf 가능)</div>
+              </div>
+            </div>
+            <div class="section__btn-group form-group">
+              <button type="submit" class="button button--wapasha button--round-l button--text-thick button--inverted">
+                의뢰하기
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="tsg-main__section-container">
+    <div class="wrapper">
+      <section class="tsg-section">
+        <header class="section__header">
+          <h2>호스팅</h2>
+        </header>
+        <div class="section__content">
+          <table>
+            <thead>
+              <tr>
+                <th>규모</th>
+                <th>용량</th>
+                <th>1일 트래픽</th>
+                <th>월금액<span>(VAT포함)</span></th>
+                <th>1년금액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Level 1</td>
+                <td>1GB</td>
+                <td>2GB</td>
+                <td>5,500원</td>
+                <td>55,000원</td>
+              </tr>
+              <tr>
+                <td>Level 2</td>
+                <td>2.5GB</td>
+                <td>5GB</td>
+                <td>11,000원</td>
+                <td>110,000원</td>
+              </tr>
+              <tr>
+                <td>Level 3</td>
+                <td>5GB</td>
+                <td>10GB</td>
+                <td>22,000원</td>
+                <td>220,000원</td>
+              </tr>
+              <tr>
+                <td>Level 4</td>
+                <td>10GB</td>
+                <td>20GB</td>
+                <td>44,000원</td>
+                <td>440,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="tsg-main__section-container">
+    <div class="wrapper">
+      <section class="tsg-section">
+        <header class="section__header">
+          <h2>개발환경</h2>
+        </header>
+        <div class="section__content">
+          <ul class="section__stacks">
+            <li ng-repeat="requestitem in requestitem">
+              <div>
+                <img ng-src={{requestitem.url}}>
+                <span>{{requestitem.title}}</span>
+              </div>
+            </li>
+          </ul>
+          <p></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>

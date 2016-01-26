@@ -1,0 +1,13 @@
+<div class="searchbox">
+  <textarea type="text" ng-model="total_search" placeholder="search music"></textarea>
+</div>
+<div class="pagewrap" id="totallistpagewrap">
+  <ul id="totallistwrap">
+    <li ng-repeat="music in musiclist | filter:total_search | orderBy:'file_name'" >
+      <input type="checkbox" id="{{ music.index }}" ng-model="music.check">
+      <label for="{{ music.index }}">
+        <p>{{ music.file_name }}</p>
+      </label>
+    </li>
+  </ul>
+</div>

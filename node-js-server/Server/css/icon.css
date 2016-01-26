@@ -1,0 +1,56 @@
+/*
+    Document   : Server/css/icon.css
+    Created on : 2015-09-19 02:27 PM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.home-icon {
+  background: url(/images/icons/home.svg);
+}
+
+.notice-icon {
+  background: url(/images/icons/notice.svg);
+}
+
+.schedule-icon {
+  background: url(/images/icons/schedule.svg);
+}
+
+.photo-icon {
+  background: url(/images/icons/photo.svg);
+}
+
+.chat-icon {
+  background: url(/images/icons/chat.svg);
+}
+
+.make-icon {
+  background: url(/images/icons/make.svg);
+}
+
+.vocal-icon {
+  background: url(/images/icons/vocal.svg);
+}
+
+.guitar-icon {
+  background: url(/images/icons/guitar.svg);
+}
+
+.bass-icon {
+  background: url(/images/icons/bass.svg);
+}
+
+.keyboard-icon {
+  background: url(/images/icons/keyboard.svg);
+}
+
+.drum-icon {
+  background: url(/images/icons/drum.svg);
+}
+
+.what-icon {
+  background: url(/images/icons/what.svg);
+}

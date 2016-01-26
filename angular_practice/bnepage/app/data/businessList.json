@@ -1,0 +1,138 @@
+[
+    {
+        "name":"SINI CARE",
+        "kname":"시니케어 건강식품",
+        "suburbs":"Brisbane City",
+        "tel":"0434412425",
+        "address":"Shop 1, 103 Elizabeth St. Brisbane City",
+        "opening hours": {
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    },
+    {
+        "name":"Kenny Travel",
+        "kname":"케니여행사",
+        "suburbs":"Sunnybank Hills",
+        "tel":"33443220",
+        "address":"43 Lang St. Sunnybank Hills QLD 4109",
+        "opening hours":{
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    },
+    {
+        "name":"Wara Wara",
+        "kname":"와라와라",
+        "suburbs":"Sunnybank",
+        "tel":"31083899",
+        "address":"178 Turton St. Sunnybank",
+        "opening hours":{
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    },
+    {
+        "name":"MIDAM",
+        "kname":"미담",
+        "suburbs":"Sunnybank Hills",
+        "tel":"33445001",
+        "address":"Shop 3, 21 Farne St. Sunnybank Hills",
+        "opening hours":{
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    },
+    {
+        "name":"funnyfunny",
+        "kname":"퍼니퍼니",
+        "suburbs":"Brisbane City",
+        "tel":"32113431",
+        "address":"85 George St. Brisbane City",
+        "opening hours":{
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    },
+    {
+        "name":"J&P Construction",
+        "kname":"제이앤피 컨스트럭션",
+        "suburbs":"Brisbane City",
+        "tel":"33419997",
+        "address":"85 George St. Brisbane City",
+        "opening hours":{
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    },
+    {
+        "name":"Mart&smart",
+        "kname":"마트앤스마트",
+        "suburbs":"South Brisbane",
+        "tel":"38467008",
+        "address":"8/220 Melbourne St. South Brisbane",
+        "opening hours":{
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    },
+    {
+        "name":"SK LIVING",
+        "kname":"에스케이 리빙",
+        "suburbs":"Brisbane City",
+        "tel":"32080187",
+        "address":"85 George St. Brisbane City",
+        "opening hours":{
+            "Mon" : "9:00am - 6:00pm",
+            "Tue" : "9:00am - 6:00pm",
+            "Wed" : "9:00am - 6:00pm",
+            "Thu" : "9:00am - 6:00pm",
+            "Fri" : "9:00am - 6:00pm",
+            "Sat" : "9:00am - 6:00pm",
+            "Sun" : "9:00am - 6:00pm",
+            "note" : "Lunch break 12:00am - 1:00pm"
+        }
+    }
+]

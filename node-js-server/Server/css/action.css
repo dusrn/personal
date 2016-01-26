@@ -1,0 +1,39 @@
+/*
+    Document   : Server/css/action.css
+    Created on : 2015-09-20 02:00 AM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+@keyframes effect {
+  100% {transform: scale(10,10);}
+}
+
+@-webkit-keyframe effect {
+  100% {-webkit-transform: scale(10,10);}
+}
+
+.effect {
+  background-color: white;
+  opacity: 0.05;
+}
+
+.action {
+}
+
+.action-effect {
+  animation-name: effect;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  
+  -webkit-animation-name: effect;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease;
+  
+  position: absolute;
+  transition: all 0.3s;
+  transition-timing-function: ease;
+  border-radius: 50%;
+}

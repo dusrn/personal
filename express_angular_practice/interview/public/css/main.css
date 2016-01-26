@@ -1,0 +1,204 @@
+* {
+  line-height: 1.6;
+  font-family: NanumGothic,'Malgun Gothic',dotum,'돋움',sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  border-radius: 10px;
+  margin: 10px;
+  width: 400px;
+  height: 700px;
+  border: 1px solid #111;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+input {
+  display: none;
+}
+
+ul {
+  display: block;
+  position: relative;
+  list-style: none;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+li {
+  margin: 5px;
+  border-bottom: 1px solid #777;
+  cursor: pointer;
+  width: calc(100% - 10px);
+}
+
+p {
+  font-size: 16px;
+  color: #eee;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+textarea {
+  padding: 2px 5px;
+  position: relative;
+  width: calc(100% - 10px);
+  height: 20px;
+  resize: none;
+  outline: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+input[type=checkbox]:checked~label p {
+  color: #0FFFC5;
+}
+
+header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 12px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #0FFFC5;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+header h1 {
+  padding-bottom: 10px;
+}
+
+#title {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#fakescroll {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: calc(100% - 91px);
+  overflow: hidden;
+  background: url(../image/band.jpg) no-repeat center center;
+  background-size: contain;
+}
+
+#backgroundcolor {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#mainwrap {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: calc(100% + 7px);
+  height: 100%;
+  padding: 5px;
+}
+
+.searchbox {
+  top: 108px;
+  position: fixed;
+  width: 389px;
+  border: 0;
+}
+
+.pagewrap {
+  position: relative;
+}
+
+#totallistpagewrap {
+  top: 28px;
+}
+
+audio {
+  display: inline-block;
+}
+
+.change_page {
+  float: left;
+  display: inline-block;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.change_page:hover {
+  background-color: #eee;
+}
+
+.change_page a {
+  padding: 5px 0;
+  color: #333;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+}
+
+#apply {
+  font-weight: bold;
+  padding: 1px 4px 4px 4px;
+  width: 100px;
+  border-radius: 10px;
+  left: 141px;
+  bottom: 58px;
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #0FFFC5;
+  cursor: pointer;
+}
+
+#apply:hover {
+  background-color: #0FFFC5;
+
+  transition: all 0.5s ease;
+}
+
+#apply:active {
+  background-color: #097158;
+}
+
+.prev_next {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.prev_next svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.prev_next svg path {
+  fill: #aaa;
+}
+
+.prev_next:hover svg path {
+  fill: #F3F3F3;
+}
+
+#playerwrap {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+}
+
+.playing p {
+  color: #0FFFC5;
+}

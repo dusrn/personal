@@ -1,0 +1,328 @@
+/*
+    Document   : chat/css/client.css
+    Created on : 2015-09-11 02:47 PM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic);
+
+* {
+  font-size: 16px;
+  font-family: 'RobotoDraft', 'Roboto', 'Noto', sans-serif;
+  font-weight: normal;
+
+  box-sizing: border-box;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background: #654848;
+}
+
+header,
+header *,
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 17px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.disable-scroll body {
+  overflow: hidden;
+}
+
+.main-view {
+  width: 100%;
+  max-width: 100%;
+
+  background: #654848;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: 0;
+  z-index: 2;
+  
+  position: fixed;
+  overflow: hidden;
+
+  background: #BB0000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  
+  transition: min-height 0.2s;
+}
+
+.header.fold {
+  min-height: 0;
+}
+
+.header.fold .side-nav-toggle {
+  visibility: hidden;
+  transition: visibility 0s 0.2s;
+}
+
+.title {
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
+  position: fixed;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title * {
+  color: #fff;
+  font-weight: 400;
+}
+
+.title .sub-title:before,
+.title .sub-title::before {
+  content: '\a0\3e\a0'; /* ' > ' */
+}
+
+.content-wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.modal-window {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.content-wrap section > *:first-child {
+  margin-top: 0;
+}
+
+.content-wrap section > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile */
+@media screen and (max-device-width: 640px) {
+  header,
+  header *,
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .header {
+    min-height: 56px;
+  }
+
+  .title {
+    min-height: 56px;
+    line-height: 56px;
+  }
+
+  .side-nav {
+    max-width: 280px;
+  }
+  
+  .content-wrap section {
+    padding-top: 56px;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .header {
+    min-height: 48px;
+  }
+
+  .title {
+    min-height: 48px;
+    line-height: 48px;
+  }
+  
+  .content-wrap section {
+    padding-top: 48px;
+  }
+  
+  .side-nav-toggle label {
+    padding: 12px;
+    background-position: 12px 12px;
+  }
+  
+  section.schedule .schedule-datepicker-wrap {
+    top: 48px;
+  }
+  
+  section.making .comment-wrap {
+    top: 214px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-device-width: 641px) {
+  .header {
+    min-height: 64px;
+  }
+
+  .title {
+    <!--
+    margin-left: 80px;
+    margin-right: 24px;
+    -->
+
+    min-height: 64px;
+    line-height: 64px;
+  }
+  
+  .content-wrap section {
+    padding-top: 64px;
+  }
+
+  .side-nav-toggle {
+    margin: 4px 8px;
+  }
+
+  .side-nav {
+    max-width: 320px;
+  }
+  
+  .thumb-card {
+    width: 31%;
+    width: calc(100% / 3 - 8px);
+  }
+  .thumb-card.big-thumb,
+  .thumb-card.double,
+  .thumb-card.quadruple {
+    width: 65%;
+    width: calc(200% / 3 - 8px);
+  }
+  
+  section.schedule .schedule-datepicker-wrap {
+    top: 64px;
+  }
+  
+  section.making .comment-wrap {
+    top: 230px;
+  }
+}
+
+/* Tablet Landscape */
+@media screen and (min-device-width: 641px) and (orientation: landscape) {
+  .header {
+    min-height: 48px;
+  }
+  
+  .title {
+    min-height: 48px;
+    line-height: 48px;
+  }
+  
+  .content-wrap section {
+    padding-top: 48px;
+  }
+  
+  .side-nav-toggle {
+    margin: 0;
+  }
+  
+  .side-nav-toggle label {
+    padding: 12px;
+    background-position: 12px 12px;
+  }
+  
+  section.schedule .schedule-datepicker-wrap {
+    top: 48px;
+  }
+  
+  .thumb-card {
+    width: 23%;
+    width: calc(25% - 8px);
+  }
+
+  .thumb-card.big-thumb,
+  .thumb-card.double,
+  .thumb-card.quadruple {
+    width: 48%;
+    width: calc(50% - 8px);
+  }
+}
+
+/* PC */
+@media screen and (min-width: 1281px) {
+  .title {
+    transition: margin-left 0.2s;
+    padding: 0;
+    <!--
+    margin-left: 24px;
+    -->
+  }
+
+  .overlay,
+  .side-nav-toggle {
+    display: none;
+  }
+
+  .side-nav {
+    margin-top: 64px;
+    max-width: 240px;
+
+    visibility: visible;
+  }
+
+  .side-nav nav {
+    visibility: visible;
+    left: 0;
+  }
+
+  .content-wrap {
+    transition: padding-left 0.2s;
+    padding-left: 240px;
+  }
+  
+  section.schedule .schedule-wrap {
+    top: 64px;
+  }
+  
+  section.making .comment-wrap {
+    top: 230px;
+  }
+}

@@ -1,0 +1,266 @@
+/*
+    Document   : Server/css/side-nav.css
+    Created on : 2015-09-20 02:11 AM
+    Author     : black9820
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.side-nav-toggle {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+.side-nav-toggle label {
+  background: transparent center center no-repeat;
+  background-position: 16px 16px;
+  background-clip: content-box;
+  background-image: url("/images/icons/menu-button.svg");
+
+  cursor: pointer;
+
+  display: block;
+  box-sizing: initial;
+
+  width: 24px;
+  height: 24px;
+  padding: 16px;
+}
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+
+  width: 87.5%;
+  width: calc(100% - 56px);
+
+  transition: visibility 0s 0.2s;
+
+  z-index: 5;
+}
+
+.side-nav nav {
+  position: absolute;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: #272727;
+  color: #fff;
+
+  /*transition: visibility 0s 0.2s, left 0.2s;*/
+}
+
+.side-nav .user-info-wrap {
+  width: 100%;
+  height: 200px;
+}
+
+.side-nav .user-info-wrap .user-icon-wrap {
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  padding: 3%;
+}
+
+.user-icon-wrap .user-icon {
+  background-repeat: no-repeat;
+  width: 102px;
+  height: 102px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.side-nav .user-info-wrap .user-login-success-wrap,
+.side-nav .user-info-wrap .user-login-wrap {
+  width: 100%;
+  height: 40%;
+  display: block;
+}
+
+.side-nav .user-info-wrap .user-login-text-wrap {
+  width: 70%;
+  height: 100%;
+  padding: 8px 0 8px 8px;
+  display: inline-block;
+  float: left;
+}
+
+.user-login-text-wrap .user-info,
+.user-login-text-wrap input {
+  width: 100%;
+  height: calc(50% - 4px);
+  color: #111;
+  border-radius: 10px;
+  margin: 2px 0;
+  outline: none;
+  padding-left: 3px;
+}
+
+.user-info {
+  text-align: center;
+  color: #fff;
+}
+
+.side-nav .user-info-wrap .user-logout-button-wrap,
+.side-nav .user-info-wrap .user-login-button-wrap {
+  width: 30%;
+  height: 100%;
+  padding: 8px;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.user-logout-button-wrap .log-out-button,
+.user-login-button-wrap .log-in-button {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: #6F1C1C;
+  border: 2px outset buttonface;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.user-info p,
+.log-out-button p,
+.log-in-button p {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.user-info p {
+  font-size: 20px;
+}
+
+.user-info img,
+.log-out-button img,
+.log-in-button img {
+  height: 100%;
+}
+
+.side-nav .user-info-wrap .user-login-success-wrap {
+  display: none;
+}
+
+.side-nav .side-nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.side-nav .side-nav-list-item a {
+  display: block;
+  padding: 0.5em;
+  cursor: pointer;
+
+  color: inherit;
+  text-decoration: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.side-nav .side-nav-list-item p {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.side-nav .side-nav-item-icon {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+
+.side-nav .side-nav-list-item:active {
+  background-color: #960000;
+  transition: background 0.2s;
+}
+
+.side-nav .side-nav-list-item:after,
+.side-nav .side-nav-list-item::after {
+  content: "";
+  display: block;
+
+  border-bottom: 1px solid #111;
+}
+
+.side-nav .user-info-wrap .user-login-success-wrap:before,
+.side-nav .user-info-wrap .user-login-success-wrap::before,
+.side-nav .user-info-wrap .user-login-wrap:before,
+.side-nav .user-info-wrap .user-login-wrap::before,
+.side-nav .side-nav-list-item:before,
+.side-nav .side-nav-list-item::before {
+  content: "";
+  display: block;
+
+  border-bottom: 1px solid #444444;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  opacity: 0;
+
+  /*transition: visibility 0s 0.2s, opacity 0.2s;*/
+
+  z-index: 4;
+}
+
+.overlay label {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.side-nav-toggler {
+  display: none;
+}
+/*
+.side-nav-toggler:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.75;
+
+  transition: opacity 0.2s;
+}
+
+.side-nav-toggler:checked ~ .side-nav {
+  visibility: visible;
+}
+
+.side-nav-toggler:checked ~ .side-nav nav {
+  visibility: visible;
+  left: 0;
+
+  transition: left 0.2s;
+}
+*/
+.no-login {
+  display: none;
+}
