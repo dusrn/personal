@@ -25,6 +25,21 @@ angular.module('team-slogup')
       li_tag[index].className = "ng-scope active";
     };
 
+    this.method3 = function(){
+      var li_tag = document.querySelectorAll("nav li");
+      for (var i=0; i<li_tag.length; i++) {
+        li_tag[i].className = "ng-scope";
+      }
+    };
+
+    this.method4 = function(index){
+      var li_tag = document.querySelectorAll("nav li");
+      for (var i=0; i<li_tag.length; i++) {
+        li_tag[i].className = "ng-scope";
+      }
+      li_tag[index].className = "ng-scope active";
+    };
+
   })
 
   .controller('HeaderCtrl', function($scope, HeaderService){
@@ -49,6 +64,10 @@ angular.module('team-slogup')
 
     $scope.click_this = function($event){
       HeaderService.method2($event.currentTarget);
+    };
+
+    $scope.click_home = function(){
+      HeaderService.method3();
     };
 
     HeaderService.method1();

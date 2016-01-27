@@ -1,6 +1,12 @@
 
 angular.module('team-slogup')
 
+  .service('ScrollresetService', function(){
+    this.reset = function() {
+      document.body.scrollTop = 0;
+    };
+  })
+
   .service('ModalService', function(){
     this.ptf_click = function(target, ptf_item, app_item){
       document.querySelector("body").className = "modal-open";
@@ -18,11 +24,12 @@ angular.module('team-slogup')
 
     this.exit_modal = function(){
       document.querySelector("body").className = "";
-    }
+    };
   })
 
-  .controller('MainCtrl', function($scope, $location, ModalService){
+  .controller('MainCtrl', function($scope, $location, HeaderService, ModalService, ScrollresetService){
     angular.extend(this, new PortfolioitemCtrl($scope, $location));
+    ScrollresetService.reset();
 
     $scope.select_index = 0;
     $scope.temp = {};
@@ -34,5 +41,13 @@ angular.module('team-slogup')
 
     $scope.close_modal = function(){
       ModalService.exit_modal();
+    };
+
+    $scope.click_ptf = function(){
+      HeaderService.method4(1);
+    };
+
+    $scope.click_request = function(){
+      HeaderService.method4(2);
     };
   });

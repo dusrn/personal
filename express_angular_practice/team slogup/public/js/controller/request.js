@@ -14,7 +14,8 @@ angular.module('team-slogup')
     };
   })
 
-  .controller('RequestCtrl', function($scope, RequestService){
+  .controller('RequestCtrl', function($scope, RequestService, ScrollresetService){
+    ScrollresetService.reset();
     $scope.submit = function(){
 
     };

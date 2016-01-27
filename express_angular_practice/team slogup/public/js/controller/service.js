@@ -1,5 +1,5 @@
 
 angular.module('team-slogup')
-  .controller('ServiceCtrl', function($scope){
-
+  .controller('ServiceCtrl', function($scope, ScrollresetService){
+    ScrollresetService.reset();
   });

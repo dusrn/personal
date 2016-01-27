@@ -1,6 +1,7 @@
 
 angular.module('team-slogup')
-  .controller('AboutCtrl', function($scope){
+  .controller('AboutCtrl', function($scope, ScrollresetService){
+    ScrollresetService.reset();
     $scope.members = [
       {
         url: "./image/hwarang.jpg",
@@ -40,7 +41,7 @@ angular.module('team-slogup')
       {
         url: "./image/jongyeop.jpg",
         name: "김종엽(Web Developer)",
-        introduce: "asd"
+        introduce: "최근에 합류하게 된 웹 개발자. 웹 개발을 시작한지 1년도 채 되지 않았으며 팀의 분위기 메이킹을 담당한다. 꽤 오랫동안 클럽에서 밴드 음악을 해왔지만 신기하게도 아는 여자 한 둘 없는 시시한 사람이다. 경희대 전자전파과 출신으로 전공과는 관계 없는 일만 하고 있다. 정상은 아니다."
       }
     ];
   });
